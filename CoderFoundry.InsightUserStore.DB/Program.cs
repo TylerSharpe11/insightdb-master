@@ -23,7 +23,7 @@ namespace CoderFoundry.InsightUserStore.DB
                 connection.Open();
                 var installer = new SchemaInstaller(connection);
                 new SchemaEventConsoleLogger().Attach(installer);
-                installer.Install("insightdb4", schema);
+                installer.Install("insightdb5", schema);
             }
         }
 

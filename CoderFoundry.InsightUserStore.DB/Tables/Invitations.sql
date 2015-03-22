@@ -2,7 +2,9 @@
 CREATE TABLE [Security].[Invitations](
 	[Id] [int] IDENTITY(1,1)  NOT NULL,
 	[FromUserId] [int] NULL,
-	[ToEmail] [nvarchar](50) NULL)
+	[ToEmail] [nvarchar](50) NULL,
+	[SecurityHash] [nvarchar](50) NULL,
+	[Household] uniqueidentifier NULL)
 
 
 GO

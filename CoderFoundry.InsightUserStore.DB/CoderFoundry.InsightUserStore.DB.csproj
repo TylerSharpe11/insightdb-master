@@ -52,8 +52,12 @@
     <EmbeddedResource Include="Tables\Users.sql" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Schemas\SecuritySchema.sql" />
@@ -117,6 +121,9 @@
     <EmbeddedResource Include="Tables\Categories.sql" />
     <EmbeddedResource Include="Tables\Invitations.sql" />
     <EmbeddedResource Include="Tables\Transactions.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Stored Procedures\GetUsersByHousehold.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

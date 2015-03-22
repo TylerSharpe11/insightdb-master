@@ -1,7 +1,7 @@
 
 CREATE TABLE [Security].[Categories](
 	[Id] [int] IDENTITY(1,1)  NOT NULL,
-	[Household] uniqueidentifier default NEWID() NOT NULL,
+	[Household] uniqueidentifier NOT NULL,
 	[Name] [nvarchar](50) NULL)
 
 
